@@ -17,11 +17,8 @@
 // reportWebVitals();
 
 
-import { getRoles } from "@testing-library/react";
-import React, { Fragment } from "react";
+import React from "react";
 import ReactDOM from 'react-dom';
-
-const elem1 = React.createElement('span' , { children: })
 
 const element = React.createElement('div',
   {
@@ -34,5 +31,4 @@ const element = React.createElement('div',
 console.log(element);
 
 ReactDOM.render(element, document.querySelector('#root'));
-
 
