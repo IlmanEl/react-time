@@ -1,5 +1,16 @@
+import { Container } from "App/App.styled"; 
+
+
+
 export const App = () => {
-    return <div>App</div>;
+
+    return (
+        <Container>
+            <div>Container</div>
+        </Container>
+
+
+    );
 };
 
 
