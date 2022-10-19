@@ -1,8 +1,11 @@
-import { Container } from "./App.styled";
-import { card } from "./card";
+import  {PageTitle}  from  'components/PageTitle/PageTitle'
 export const App = () => {
     return (
-        <Container>Я не очень сильно понимаю как работает компонент , но верю свот силы</Container>
-    )
-}
+         <div>
+            <PageTitle text="24th Core Worlds Coalition Conference" />
+        </div>
+    );
+};
+
+
   
