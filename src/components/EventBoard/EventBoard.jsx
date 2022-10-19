@@ -1,3 +1,5 @@
-export const EventBoard = () => {
-    return <div className="eventBoard">Event cards</div>
+import s from './EventBoard.module.css'; 
+
+export const EventBoard = ({events}) => {
+    return <div className={s.eventBoard}>Event cards</div>
 }
