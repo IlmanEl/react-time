@@ -9,3 +9,4 @@ export const PageTitle = ({ text }) => {
 PageTitle.propTypes = {
     text: PropTypes.string.isRequired,
 }
+  
