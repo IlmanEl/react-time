@@ -1,4 +1,3 @@
-import { FaBeer } from 'react-icons/fa';
 import { PageTitle } from 'components/PageTitle/PageTitle'
 import { EventBoard } from 'components/EventBoard/EventBoard'
 import upcomingEvents from '../upcomingEvents.json'
