@@ -1,8 +1,9 @@
 .event {
     position: relative;
-    border: 2px;
+    border: 10px solid bisque ;
     padding: 8px;
     border-radius: 4px;
+    background-color: rgb(180, 228, 145);
 }
 
 .title {
