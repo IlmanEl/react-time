@@ -1,12 +1,14 @@
+import { FaBeer } from 'react-icons/fa';
 import { PageTitle } from 'components/PageTitle/PageTitle'
 import { EventBoard } from 'components/EventBoard/EventBoard'
-// import s from 'components/EventBoard/EventBoard.module.css'
+import upcomingEvents from '../upcomingEvents.json'
+
 export const App = () => {
     return (
-         <div>
+        <>
             <PageTitle text="24th Core Worlds Coalition Conference" />
-            <EventBoard />
-        </div>
+            <EventBoard events={upcomingEvents} />
+        </>
     );
 };
 
