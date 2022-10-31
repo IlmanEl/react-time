@@ -1,8 +1,9 @@
 import s from './PageTitle.module.css';
 import PropTypes from 'prop-types';
+import { Title } from './PageTitle.styled';
 
 export const PageTitle = ({ text }) => {
-    return <h1 className={s.title}>{text}</h1>
+    return <Title>{text}</Title>
     
 };
 

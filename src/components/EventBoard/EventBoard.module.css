@@ -4,6 +4,6 @@
     gap: 24px;
     padding-left: 16px;
     padding-right: 16px;
-    /* border: 4px solid rgb(255, 255, 255); */
-    background-color: bisque;
+    border: 4px solid rgb(255, 255, 255);
+    /* background-color: bisque; */
 }

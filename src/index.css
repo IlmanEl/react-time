@@ -27,7 +27,7 @@ body{
   -moz-osx-font-smoothing: grayscale;
   color: var(--color-primary-text);
   line-height: 1.5;
-  background-color: bisque;
+  /* background-color: bisque; */
   scroll-behavior: smooth;
 }
 

@@ -11,7 +11,8 @@ export const Event = ({ name, location, speaker, type, start, end }) => {
     
     const formattedStart = formatEventStart(start);
     const duration = formatEventDuration(start, end);
-
+  
+    
   
     return (
 
@@ -23,18 +24,18 @@ export const Event = ({ name, location, speaker, type, start, end }) => {
                 {location}
             </p>
             <p className={css.info}>
-                <IoIosPerson className={css.icon} size={22}/>
+                <IoIosPerson className={css.icon} size={22} />
                 {speaker}
             </p>
             <p className={css.info}>
-                <FaCalendarAlt className={css.icon} size={20}/>
+                <FaCalendarAlt className={css.icon} size={20} />
                 {formattedStart}
             </p>
             <p className={css.info}>
-                <BsClockFill className={css.icon} size={20}/>
+                <BsClockFill className={css.icon} size={20} />
                 {duration}
             </p>
-            {/* <span className="chip free|paid|vip">Event type</span> */}
+            <span className={`${css.chip} ${css[type]}`}>{type}</span>
         </div>
     );
     
@@ -45,8 +46,8 @@ Event.propTypes = {
     location: PropTypes.string.isRequired,
     speaker: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
-    time: {
+    time: PropTypes.exact ({
         start: PropTypes.string.isRequired,
         end: PropTypes.string.isRequired,
-    }
+    })
 };
