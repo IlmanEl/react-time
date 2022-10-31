@@ -1,16 +1,18 @@
 import PropTypes from "prop-types";
-// import { formatEventStart } from 'utils/formatEventStart'
 import { IoLocationSharp } from "react-icons/io5";
 import css  from "./Event.module.css";
 import { IoIosPerson } from "react-icons/io";
 import { BsClockFill } from "react-icons/bs";
 import { FaCalendarAlt } from "react-icons/fa";
-
- // const formattedStart = formatEventStart(start);
+// import { formatEventStart } from 'utils/formatEventStart'
+// import { formatEventDuration } from 'utils/formatEventDuration'
+import {formatEventStart , formatEventDuration  } from 'utils';
 export const Event = ({ name, location, speaker, type, start, end }) => {
     
-//   const formattedStart = formatEventStart(start);
-    // const bet = ret(start)
+    const formattedStart = formatEventStart(start);
+    const duration = formatEventDuration(start, end);
+
+  
     return (
 
 
@@ -26,11 +28,11 @@ export const Event = ({ name, location, speaker, type, start, end }) => {
             </p>
             <p className={css.info}>
                 <FaCalendarAlt className={css.icon} size={20}/>
-                {start}
+                {formattedStart}
             </p>
             <p className={css.info}>
                 <BsClockFill className={css.icon} size={20}/>
-                {end}
+                {duration}
             </p>
             {/* <span className="chip free|paid|vip">Event type</span> */}
         </div>
