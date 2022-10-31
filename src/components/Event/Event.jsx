@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { formatEventStart } from 'utils/formatEventStart'
+// import { formatEventStart } from 'utils/formatEventStart'
 import { IoLocationSharp } from "react-icons/io5";
 import css  from "./Event.module.css";
 import { IoIosPerson } from "react-icons/io";
