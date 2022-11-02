@@ -4,9 +4,9 @@ import css  from "./Event.module.css";
 import { IoIosPerson } from "react-icons/io";
 import { BsClockFill } from "react-icons/bs";
 import { FaCalendarAlt } from "react-icons/fa";
-// import { formatEventStart } from 'utils/formatEventStart'
-// import { formatEventDuration } from 'utils/formatEventDuration'
-import {formatEventStart , formatEventDuration  } from 'utils';
+import { formatEventStart, formatEventDuration } from 'utils';
+import { Card , Title , Info , Chip} from "./Event.styled";
+
 export const Event = ({ name, location, speaker, type, start, end }) => {
     
     const formattedStart = formatEventStart(start);
@@ -17,26 +17,26 @@ export const Event = ({ name, location, speaker, type, start, end }) => {
     return (
 
 
-        <div className={css.event}>
-            <h2 className={css.title}>{name}</h2>
-            <p className={css.info}>
+        <Card>
+            <Title>{name}</Title>
+            <Info>
                 <IoLocationSharp className={css.icon} size={22} />
                 {location}
-            </p>
-            <p className={css.info}>
+            </Info>
+            <Info>
                 <IoIosPerson className={css.icon} size={22} />
                 {speaker}
-            </p>
-            <p className={css.info}>
+            </Info>
+            <Info>
                 <FaCalendarAlt className={css.icon} size={20} />
                 {formattedStart}
-            </p>
-            <p className={css.info}>
+            </Info>
+            <Info>
                 <BsClockFill className={css.icon} size={20} />
                 {duration}
-            </p>
-            <span className={`${css.chip} ${css[type]}`}>{type}</span>
-        </div>
+            </Info>
+            <Chip type={type}>{type}</Chip>
+        </Card>
     );
     
 };

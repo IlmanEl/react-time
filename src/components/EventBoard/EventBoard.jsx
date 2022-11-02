@@ -13,7 +13,7 @@ export const EventBoard = ({ events }) => {
             type={type}
             start={time.start}
             end={time.end}
-        />
+        /> 
     ))}
     </Board>
     );
