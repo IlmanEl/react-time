@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import { IoLocationSharp } from "react-icons/io5";
-import css  from "./Event.module.css";
 import { IoIosPerson } from "react-icons/io";
 import { BsClockFill } from "react-icons/bs";
 import { FaCalendarAlt } from "react-icons/fa";
@@ -20,19 +19,19 @@ export const Event = ({ name, location, speaker, type, start, end }) => {
         <Card>
             <Title>{name}</Title>
             <Info>
-                <IoLocationSharp className={css.icon} size={22} />
+                <IoLocationSharp  />
                 {location}
             </Info>
             <Info>
-                <IoIosPerson className={css.icon} size={22} />
+                <IoIosPerson  />
                 {speaker}
             </Info>
             <Info>
-                <FaCalendarAlt className={css.icon} size={20} />
+                <FaCalendarAlt  />
                 {formattedStart}
             </Info>
             <Info>
-                <BsClockFill className={css.icon} size={20} />
+                <BsClockFill  />
                 {duration}
             </Info>
             <Chip type={type}>{type}</Chip>

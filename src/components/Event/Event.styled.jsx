@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { type } from "@testing-library/user-event/dist/type";
 
 export const Card = styled.div`
     position: relative;
@@ -23,7 +24,9 @@ export const Info = styled.p`
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    letter-spacing: 0.25px;`;
+    letter-spacing: 0.25px;
+   
+    `;
 
 
 export const Chip = styled.span`
@@ -33,7 +36,6 @@ export const Chip = styled.span`
     padding: 4px 8px;
     border-radius: 4px;
     text-transform: uppercase;
-    background-color: #000;
     color: #fff;
     
 
@@ -41,9 +43,9 @@ background-color: ${props => {
 
     switch (props.type) {
         case 'free': 
-            return 'darkgreen';
+            return 'grey';
           case 'paid': 
-            return 'navy';
+            return 'skyblue';
           case 'vip': 
             return 'tomato';
  default: return '#000'    
@@ -59,14 +61,3 @@ background-color: ${props => {
 // }
 
 
-// .free {
-//     background-color: green;
-// }
-
-// .paid {
-//     background-color: blue;
-// }
-
-// .vip {
-//     background-color: red;
-// }
