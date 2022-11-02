@@ -1,4 +1,3 @@
-import s from './PageTitle.module.css';
 import PropTypes from 'prop-types';
 import { Title } from './PageTitle.styled';
 
