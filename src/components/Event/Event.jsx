@@ -19,19 +19,19 @@ export const Event = ({ name, location, speaker, type, start, end }) => {
         <Card>
             <Title>{name}</Title>
             <Info>
-                <IoLocationSharp  />
+                <IoLocationSharp  size={22} />
                 {location}
             </Info>
             <Info>
-                <IoIosPerson  />
+                <IoIosPerson  size={22} />
                 {speaker}
             </Info>
             <Info>
-                <FaCalendarAlt  />
+                <FaCalendarAlt  size={20} />
                 {formattedStart}
             </Info>
             <Info>
-                <BsClockFill  />
+                <BsClockFill  size={20} />
                 {duration}
             </Info>
             <Chip type={type}>{type}</Chip>

@@ -25,6 +25,11 @@ export const Info = styled.p`
     line-height: 24px;
     font-weight: 400;
     letter-spacing: 0.25px;
+    svg {
+    display: block; 
+    margin-right: 20px;
+    color: var(--color-secondary-text);
+    }
    
     `;
 
@@ -55,9 +60,7 @@ background-color: ${props => {
     `;
 
 // .icon {
-//     display: block; 
-//     margin-right: 8px;
-//     color: var(--color-secondary-text);
+
 // }
 
 
